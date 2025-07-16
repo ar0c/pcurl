@@ -76,7 +76,7 @@ func GetArgsToken(curlString string) (curl []string, err error) {
 		//fmt.Printf("(%c):%d, %t\n", b, sign, word == WordEnd)
 
 		if word == WordEnd {
-			curl = append(curl, buf.String())
+			curl = append(curl, trim(buf.String()))
 			buf.Reset()
 			//sign = Unused
 			word = Unused
@@ -110,4 +110,12 @@ func toErr(sign Sign) error {
 	default:
 		return ErrUnknown
 	}
+}
+
+func trim(s string) string {
+	s = strings.Trim(s, "\\")
+	s = strings.Trim(s, "\n")
+	s = strings.Trim(s, "\t")
+	s = strings.Trim(s, "\r")
+	return s
 }
