@@ -1,4 +1,4 @@
-module github.com/antlabs/pcurl
+module github.com/ar0c/pcurl
 
 go 1.18
 

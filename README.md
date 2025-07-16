@@ -1,5 +1,5 @@
 # pcurl
-[![Go](https://github.com/antlabs/pcurl/workflows/Go/badge.svg)](https://github.com/antlabs/pcurl/actions)
+[![Go](https://github.com/ar0c/pcurl/workflows/Go/badge.svg)](https://github.com/ar0c/pcurl/actions)
 [![codecov](https://codecov.io/gh/antlabs/pcurl/branch/master/graph/badge.svg)](https://codecov.io/gh/antlabs/pcurl)
 
 pcurl是解析curl表达式的库
@@ -29,7 +29,7 @@ package main
 
 import (
     "fmt"
-    "github.com/antlabs/pcurl"
+    "github.com/ar0c/pcurl"
     //"github.com/guonaihong/gout"
     "io"
     "io/ioutil"
@@ -62,7 +62,7 @@ package main
 
 import (
     "fmt"
-    "github.com/antlabs/pcurl"
+    "github.com/ar0c/pcurl"
     "io"
     "net/http"
     "os"
@@ -93,7 +93,7 @@ package main
 
 import (
     "fmt"
-    "github.com/antlabs/pcurl"
+    "github.com/ar0c/pcurl"
     "io"
     "net/http"
     "os"
@@ -123,7 +123,7 @@ package main
 
 import (
     "fmt"
-    "github.com/antlabs/pcurl"
+    "github.com/ar0c/pcurl"
     "io"
     "net/http"
     "os"
@@ -158,7 +158,7 @@ package main
 
 import (
     "fmt"
-    "github.com/antlabs/pcurl"
+    "github.com/ar0c/pcurl"
     "io"
     "net/http"
     "os"

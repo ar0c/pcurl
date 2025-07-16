@@ -9,7 +9,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/antlabs/pcurl/body"
+	"github.com/ar0c/pcurl/body"
 	"github.com/guonaihong/clop"
 	"github.com/guonaihong/gout"
 )

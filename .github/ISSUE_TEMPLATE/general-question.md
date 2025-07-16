@@ -12,8 +12,8 @@ Before asking a question, make sure you have:
 
 - Searched existing Stack Overflow questions.
 - Googled your question.
-- Searched open and closed [GitHub issues](https://github.com/antlabs/pcurl/issues)
+- Searched open and closed [GitHub issues](https://github.com/ar0c/pcurl/issues)
 - Read the documentation:
-  - [pcurl Readme](https://github.com/antlabs/pcurl/blob/master/README.md)
+  - [pcurl Readme](https://github.com/ar0c/pcurl/blob/master/README.md)
 
 -->

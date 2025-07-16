@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/antlabs/pcurl/body"
+	"github.com/ar0c/pcurl/body"
 	"github.com/stretchr/testify/assert"
 )
 
