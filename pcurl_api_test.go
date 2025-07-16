@@ -46,21 +46,28 @@ func TestPaserAndObj(t *testing.T) {
 		// 	url:  `https://{{.Host}}/{{.OrgName}}/{{.AppName}}/chatgroups/{{.GroupID}}`,
 		// },
 		{
-			curl:`curl --location 'https://dev-df.echo.tech/common/create_or_update_api' \
---header 'accept: application/json, text/plain, */*' \
---header 'accept-language: zh-CN,zh;q=0.9,en;q=0.8,en-GB;q=0.7,en-US;q=0.6' \
+			curl:`curl --location 'https://dev-api.qiandao.cn/auctioneer/bid/list?auction_id=628859035487220257' \
+--header 'authority: dev-api.qiandao.cn' \
+--header 'x-echoing-env: test-c' \
+--header 'x-request-package-id: 1000' \
+--header 'x-request-circle: chaowanzu' \
+--header 'x-request-sign: Njc3MmZmNTY2MDI0ZGY2N2ZkMTA0MWViMzU5YmFjZTNhZDg4NmFiZDdlZGI2MmEyYmUyNjk3YmIwY2JhMjg0Yg==' \
+--header 'x-request-timestamp: 1692694161474' \
+--header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3MTM5MTQ2MzY4OTg2NDY2MSIsInR5cGUiOiJVU0VSIiwiZXhwIjoxNzUyOTEyMzY0LCJpYXQiOjE3NTI2NTMxNjR9.HkVZJE0UCh_vv88krfEWLeRBXuH5PMlwguZJbmQSAE0VGG-6OxnQGPwe5nEzL17c5MKizsPeNoqfhz8UKdT715XVEBKf6tCG1wE3cLeTOPELddOMC7yI6YACKnBrLhOg96eVuAt7VyHoNn0sHsEDIOZhn_yn_qHaTZnSX8BOMoYFpBGLnTRQtLzUrXmL3BTz0Y2PUuiaVGRFIf6_xxF3FUOiaahvbzlOhFlLXswGLusD694qf15Gxtc1vdZps25WaJi-l7_Li5eJh3BptxZx9H0fTUpH7AYnp2dce9Kb18c77GKecqwR47n6hPw9uFaC2bzkG7XIw-JAErrtAUIAQA' \
 --header 'content-type: application/json' \
---header 'origin: https://qa.echo.tech' \
---header 'priority: u=1, i' \
---header 'referer: https://qa.echo.tech/' \
---header 'sec-ch-ua: "Microsoft Edge";v="137", "Chromium";v="137", "Not/A)Brand";v="24"' \
---header 'sec-ch-ua-mobile: ?0' \
---header 'sec-ch-ua-platform: "Windows"' \
---header 'sec-fetch-dest: empty' \
+--header 'x-package-id: 1000' \
+--header 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/1.06.2307250 MicroMessenger/8.0.5 webview/' \
+--header 'x-request-sign-type: HMAC_SHA256' \
+--header 'x-request-version: 2.26.33' \
+--header 'x-request-package-sign-version: 0.0.2' \
+--header 'x-device-id: 9c6ae14c-591c-4964-b09b-a40ce527ac99' \
+--header 'x-request-sign-version: v1' \
+--header 'accept: */*' \
+--header 'sec-fetch-site: cross-site' \
 --header 'sec-fetch-mode: cors' \
---header 'sec-fetch-site: same-site' \
---header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 Edg/137.0.0.0' \
---data '{"name":"待助力列表","desc":"","maintainer":"lrc","group":"C2C","url":"https://dev-df.echo.tech/c2c/get_boost_fes","req_param":[{"key":"user_id","name":"用户id","type":"input","required":true,"default":{"name":"","value":""},"value":[]},{"key":"act_id","name":"活动id","type":"input","required":true,"default":{"name":"","value":"877893809604676009"},"value":[]}],"effic_imp_time":5,"extra":null,"is_using":1}'`,
+--header 'sec-fetch-dest: empty' \
+--header 'referer: https://servicewechat.com/wxaf7362726f135b5c/devtools/page-frame.html' \
+--header 'Cookie: et_user_dev=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3MTM5MTQ2MzY4OTg2NDY2MSIsInR5cGUiOiJVU0VSIiwiZXhwIjoxNzUyOTEyMzY0LCJpYXQiOjE3NTI2NTMxNjR9.HkVZJE0UCh_vv88krfEWLeRBXuH5PMlwguZJbmQSAE0VGG-6OxnQGPwe5nEzL17c5MKizsPeNoqfhz8UKdT715XVEBKf6tCG1wE3cLeTOPELddOMC7yI6YACKnBrLhOg96eVuAt7VyHoNn0sHsEDIOZhn_yn_qHaTZnSX8BOMoYFpBGLnTRQtLzUrXmL3BTz0Y2PUuiaVGRFIf6_xxF3FUOiaahvbzlOhFlLXswGLusD694qf15Gxtc1vdZps25WaJi-l7_Li5eJh3BptxZx9H0fTUpH7AYnp2dce9Kb18c77GKecqwR47n6hPw9uFaC2bzkG7XIw-JAErrtAUIAQA'`,
 url: `https://dev-df.echo.tech/common/create_or_update_api`,
 		},
 	}

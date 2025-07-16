@@ -16,9 +16,10 @@ type Encode struct {
 }
 
 type Req struct {
-	Method string   `json:"method,omitempty" yaml:"method"`
-	URL    string   `json:"url,omitempty" yaml:"url"`
-	Encode Encode   `json:"encode,omitempty" yaml:"encode"`
-	Body   any      `json:"body,omitempty" yaml:"body"`
-	Header []string `json:"header,omitempty" yaml:"header"`
+	Method string            `json:"method,omitempty" yaml:"method"`
+	URL    string            `json:"url,omitempty" yaml:"url"`
+	Encode Encode            `json:"encode,omitempty" yaml:"encode"`
+	Query  map[string]string `json:"query,omitempty" yaml:"query"`
+	Body   any               `json:"body,omitempty" yaml:"body"`
+	Header []string          `json:"header,omitempty" yaml:"header"`
 }

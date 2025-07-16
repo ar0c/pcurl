@@ -23,6 +23,7 @@ func ParseAndObj(curl string) (r *Req, err error) {
 	r.Method = c.Method
 	r.URL = c.URL2
 	r.Header = c.Header
+	r.Query = c.getQuery()
 
 	r.Encode.Body, r.Body, err = c.getBodyEncodeAndObj()
 	return

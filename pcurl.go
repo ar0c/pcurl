@@ -195,6 +195,20 @@ func (c *Curl) getURL() string {
 	return url
 }
 
+func (c *Curl) getQuery() map[string]string {
+	u, err := url.Parse(c.URL2)
+	if err != nil {
+		return nil
+	}
+
+	query := make(map[string]string)
+	for k, v := range u.Query() {
+		query[k] = v[0]
+	}
+
+	return query
+}
+
 func (c *Curl) setMethod() {
 	// 在curl里面-X的选项的优先级别比-G高，所以c.Method为空时才会看c.Get是否设置
 	if len(c.Method) == 0 && c.Get {
