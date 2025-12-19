@@ -46,29 +46,7 @@ func TestPaserAndObj(t *testing.T) {
 		// 	url:  `https://{{.Host}}/{{.OrgName}}/{{.AppName}}/chatgroups/{{.GroupID}}`,
 		// },
 		{
-			curl:`curl --location 'https://dev-api.qiandao.cn/auctioneer/bid/list?auction_id=628859035487220257' \
---header 'authority: dev-api.qiandao.cn' \
---header 'x-echoing-env: test-c' \
---header 'x-request-package-id: 1000' \
---header 'x-request-circle: chaowanzu' \
---header 'x-request-sign: Njc3MmZmNTY2MDI0ZGY2N2ZkMTA0MWViMzU5YmFjZTNhZDg4NmFiZDdlZGI2MmEyYmUyNjk3YmIwY2JhMjg0Yg==' \
---header 'x-request-timestamp: 1692694161474' \
---header 'authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3MTM5MTQ2MzY4OTg2NDY2MSIsInR5cGUiOiJVU0VSIiwiZXhwIjoxNzUyOTEyMzY0LCJpYXQiOjE3NTI2NTMxNjR9.HkVZJE0UCh_vv88krfEWLeRBXuH5PMlwguZJbmQSAE0VGG-6OxnQGPwe5nEzL17c5MKizsPeNoqfhz8UKdT715XVEBKf6tCG1wE3cLeTOPELddOMC7yI6YACKnBrLhOg96eVuAt7VyHoNn0sHsEDIOZhn_yn_qHaTZnSX8BOMoYFpBGLnTRQtLzUrXmL3BTz0Y2PUuiaVGRFIf6_xxF3FUOiaahvbzlOhFlLXswGLusD694qf15Gxtc1vdZps25WaJi-l7_Li5eJh3BptxZx9H0fTUpH7AYnp2dce9Kb18c77GKecqwR47n6hPw9uFaC2bzkG7XIw-JAErrtAUIAQA' \
---header 'content-type: application/json' \
---header 'x-package-id: 1000' \
---header 'user-agent: Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1 wechatdevtools/1.06.2307250 MicroMessenger/8.0.5 webview/' \
---header 'x-request-sign-type: HMAC_SHA256' \
---header 'x-request-version: 2.26.33' \
---header 'x-request-package-sign-version: 0.0.2' \
---header 'x-device-id: 9c6ae14c-591c-4964-b09b-a40ce527ac99' \
---header 'x-request-sign-version: v1' \
---header 'accept: */*' \
---header 'sec-fetch-site: cross-site' \
---header 'sec-fetch-mode: cors' \
---header 'sec-fetch-dest: empty' \
---header 'referer: https://servicewechat.com/wxaf7362726f135b5c/devtools/page-frame.html' \
---header 'Cookie: et_user_dev=eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijc3MTM5MTQ2MzY4OTg2NDY2MSIsInR5cGUiOiJVU0VSIiwiZXhwIjoxNzUyOTEyMzY0LCJpYXQiOjE3NTI2NTMxNjR9.HkVZJE0UCh_vv88krfEWLeRBXuH5PMlwguZJbmQSAE0VGG-6OxnQGPwe5nEzL17c5MKizsPeNoqfhz8UKdT715XVEBKf6tCG1wE3cLeTOPELddOMC7yI6YACKnBrLhOg96eVuAt7VyHoNn0sHsEDIOZhn_yn_qHaTZnSX8BOMoYFpBGLnTRQtLzUrXmL3BTz0Y2PUuiaVGRFIf6_xxF3FUOiaahvbzlOhFlLXswGLusD694qf15Gxtc1vdZps25WaJi-l7_Li5eJh3BptxZx9H0fTUpH7AYnp2dce9Kb18c77GKecqwR47n6hPw9uFaC2bzkG7XIw-JAErrtAUIAQA'`,
-url: `https://dev-df.echo.tech/common/create_or_update_api`,
+			curl: `curl -X 'GET' -d '' -H 'Accept-Language: zh' -H 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjU2OTg4NDI3NjkwNDk2MTA3MSIsInR5cGUiOiJVU0VSIiwiZGV2aWNlSWQiOiIxMDAyIiwiZXhwIjoxNzY2Mzg2NzQ4LCJpYXQiOjE3NjYxMjc1NDh9.CzuNevCp6J1Dj_1Y-bJkCUu3URMZIFR14zUxKCcE-00' -H 'Content-Type: application/json' -H 'Cookie: ' -H 'Referer: https://qiandao.cn' -H 'Remoteip: 192.168.10.6' -H 'User-Agent: Kuril/6.26.0 (tech.echoing.kuril; build:685; iOS 18.6.2)' -H 'X-B3-Sampled: 1' -H 'X-B3-Spanid: cc0e6aef3a61ff06' -H 'X-Client-Package-Id: 1002' -H 'X-Device-Id: 9F9F9B92-A0FD-4280-8A88-0D89227B560B' -H 'X-Echo-Audit: false' -H 'X-Echo-City-Code: 381768123839202353' -H 'X-Echo-Install-Id: OTAzNzU1MjU4MzE5MTI3MzUw' -H 'X-Echo-Region: CN' -H 'X-Echo-Teen-Mode: false' -H 'X-Echoing-Env: test-x' -H 'X-Envoy-Attempt-Count: 1' -H 'X-Envoy-External-Address: 192.168.10.6' -H 'X-Forwarded-Client-Cert: By=spiffe://cluster.local/ns/dev/sa/default;Hash=e4c0a24cec8a617d1166836133813e0133f2e4c7417490686b08362da1d83911;Subject=\"\";URI=spiffe://cluster.local/ns/ingress-istio/sa/internal-default-service-account' -H 'X-Forwarded-For: 192.168.10.6,100.122.17.21' -H 'X-Forwarded-Proto: https' -H 'X-Request-Channel: AppStore' -H 'X-Request-Device: ios' -H 'X-Request-Id: 12e7183a-5f9c-9e87-be46-cd7cfe0a0930' -H 'X-Request-Mock-Id: 1541' -H 'X-Request-Package-Id: 1002' -H 'X-Request-Package-Sign-Version: 0.0.3' -H 'X-Request-Sign: gmpL9EtTX/HQ1ifeFpVFrRtnnDVY+Tq+r3nkSZjMnbJm/j8YTakoCfWikZbE2aZYWsArCYe3S9YE7q6JI+s8GT5FmSDf984uf2rKCGEgurz4EUv3oMVlpqxoZv4A9WjnEWjh6tyy62tuB5UScal8NMUGwO0YFKeTDI2Ui7Wy1PQYMuFNaYs2T0cmw2DAzlXQxsLzPXr3HX5mRnJcGRChV7ToyImlG+lA0CQydxXDrUTVJnuCagaNxj0I+NinIA3cV8+K21k4doVRomuRp1NcSqsod8rkd01M6csEf0NOqGpUWq5b/rpN578PonrSnEuIgKJOQANbt0fVWZs64aJoxg==' -H 'X-Request-Sign-Type: RSA2' -H 'X-Request-Sign-Version: v1' -H 'X-Request-Timestamp: 1766127853780' -H 'X-Request-Utm-Source: appstore' -H 'X-Request-Version: 6.26.0' 'https://dev-api.qiandao.cn/c2c-web/v1/luckybag/host-products?hostId=107763688714290865&offset=0&limit=20&salableonly=true&typePropertyTagIds=17&typePropertyTagIds=16&typePropertyTagIds=53193&typePropertyTagIds=1023855&typePropertyTagIds=1164028&typePropertyTagIds=55537&typePropertyTagIds=1236295&typePropertyTagIds=1598689&typePropertyTagIds=1599706&typePropertyTagIds=1598690&typePropertyTagIds=1598692'`,
 		},
 	}
 

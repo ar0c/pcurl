@@ -195,15 +195,19 @@ func (c *Curl) getURL() string {
 	return url
 }
 
-func (c *Curl) getQuery() map[string]string {
+func (c *Curl) getQuery() map[string]any {
 	u, err := url.Parse(c.URL2)
 	if err != nil {
 		return nil
 	}
 
-	query := make(map[string]string)
+	query := make(map[string]any)
 	for k, v := range u.Query() {
-		query[k] = v[0]
+		if len(v) == 1 {
+			query[k] = v[0]
+		} else {
+			query[k] = v
+		}
 	}
 
 	return query

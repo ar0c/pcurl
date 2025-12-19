@@ -3,6 +3,7 @@ package pcurl
 import (
 	"encoding/json"
 	"net/http"
+	"strings"
 )
 
 // 解析curl字符串形式表达式，并返回*http.Request
@@ -12,7 +13,7 @@ func ParseAndRequest(curl string) (*http.Request, error) {
 
 // 解析curl字符串形式表达式，并返回结构体
 func ParseAndObj(curl string) (r *Req, err error) {
-
+	curl = strings.Replace(curl, "--http2", "", 1)
 	r = &Req{}
 	c := ParseString(curl)
 	if c.Err != nil {
